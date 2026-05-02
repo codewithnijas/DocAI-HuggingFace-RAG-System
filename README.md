@@ -1,87 +1,96 @@
-📄 DocAI — AI PDF Chatbot (RAG with HuggingFace + FAISS)
+```{=html}
+<p align="center">
+```
+`<img src="https://via.placeholder.com/1200x300.png?text=DocAI+-+AI+PDF+Chatbot" />`{=html}
+```{=html}
+</p>
+```
+```{=html}
+<h1 align="center">
+```
+🚀 DocAI --- AI PDF Chatbot
+```{=html}
+</h1>
+```
+```{=html}
+<p align="center">
+```
+`<b>`{=html}Chat with PDFs using RAG + HuggingFace + FAISS`</b>`{=html}
+```{=html}
+</p>
+```
+```{=html}
+<p align="center">
+```
+`<img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/Framework-Gradio-orange?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/LLM-HuggingFace-yellow?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/VectorDB-FAISS-green?style=for-the-badge"/>`{=html}
+```{=html}
+</p>
+```
 
-An intelligent PDF Question Answering system built using Retrieval-Augmented Generation (RAG).
-Upload any PDF and ask natural language questions — powered by HuggingFace LLMs + semantic search.
+------------------------------------------------------------------------
 
-🚀 Live Features
-📄 Upload and analyze any PDF
-🧠 AI-powered question answering (RAG pipeline)
-🔍 Semantic search using FAISS vector database
-🤖 HuggingFace LLM (Qwen2.5 / other models)
-📚 Source-aware answers (page references)
-💬 Interactive Gradio chat UI
-⚡ Fast embedding with SentenceTransformers
-🧠 Architecture Overview
-🖼️ System Workflow
-📄 PDF → ✂️ Chunking → 🔢 Embeddings → 🧠 FAISS Index
-                                          ↓
-💬 User Question → 🔍 Similarity Search → 🤖 LLM → 📢 Answer
-📸 Screenshots
-🖥️ Main Interface
+## ✨ Features
 
-![UI Screenshot](assets/ui.png)
-⚙️ Tech Stack
-LangChain – RAG pipeline orchestration
-FAISS – Vector similarity search
-SentenceTransformers – Embeddings model
-HuggingFace Inference API – LLM (Qwen2.5)
-PyPDF – PDF parsing
-Gradio – Web UI
-📦 Installation
-git clone https://github.com/your-username/DocAI.git
-cd DocAI
+-   📄 Upload any PDF\
+-   🧠 Context-aware AI answers\
+-   🔍 Semantic search (FAISS)\
+-   🤖 HuggingFace LLM (Qwen2.5)\
+-   📚 Page citations\
+-   💬 Beautiful chat UI
 
+------------------------------------------------------------------------
+
+## 🎥 Demo
+
+```{=html}
+<p align="center">
+```
+`<img src="assets/demo.gif" width="800"/>`{=html}
+```{=html}
+</p>
+```
+
+------------------------------------------------------------------------
+
+## 🧠 Architecture
+
+``` text
+PDF → Chunk → Embed → FAISS → Retrieve → LLM → Answer
+```
+
+------------------------------------------------------------------------
+
+## ⚙️ Tech Stack
+
+-   LangChain\
+-   FAISS\
+-   SentenceTransformers\
+-   HuggingFace\
+-   Gradio
+
+------------------------------------------------------------------------
+
+## 📦 Installation
+
+``` bash
+git clone https://github.com/codewithnijas/DocAI-HuggingFace-RAG-System.git
+cd DocAI-HuggingFace-RAG-System
 pip install -r requirements.txt
-🔐 HuggingFace Setup
+```
 
-Create a token here: https://huggingface.co/settings/tokens
+------------------------------------------------------------------------
 
-Then set it in environment:
+## 🚀 Run
 
-import os
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "your_token_here"
-🚀 Run the Project
-Option 1: Jupyter / Colab
-
-Run DocAI.ipynb step by step.
-
-Option 2: Gradio App
+``` bash
 python app.py
-🧪 Example Questions
-What is this document about?
-Summarize key points
-What are the conclusions?
-Explain section 3 in simple terms
-🧱 Project Structure
-DocAI/
-│
-├── DocAI.ipynb
-├── app.py
-├── requirements.txt
-├── README.md
-└── assets/
-    ├── ui.png
-    ├── chat.png
-    └── process.png
-🧠 How It Works (RAG Pipeline)
-PDF is loaded using PyPDFLoader
-Text is split into chunks
-Each chunk is converted into embeddings
-Stored in FAISS vector database
-User question is embedded
-Similar chunks are retrieved
-Context is sent to LLM (Qwen2.5)
-Final grounded answer is generated
-📌 Future Improvements
-🔥 Streaming responses
-🧠 Memory-based chat history
-🌐 Deploy on HuggingFace Spaces
-📊 PDF highlighting in UI
-🧾 Multi-document Q&A
-👨‍💻 Author
+```
 
-Muhammed Nijas
+------------------------------------------------------------------------
 
-⭐ If you like this project
+## ⭐ Support
 
-Give it a ⭐ on GitHub and share it!
+If you like this project, give it a ⭐ and share!
