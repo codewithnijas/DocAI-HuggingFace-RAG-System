@@ -20,6 +20,6 @@ Run in Colab or local Jupyter.
 2. Process PDF
 3. Ask questions
 
-![Demo](demo.png)
+![Demo](ui.png)
 
   
