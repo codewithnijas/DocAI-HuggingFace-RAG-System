@@ -19,3 +19,9 @@ Run in Colab or local Jupyter.
 1. Upload PDF
 2. Process PDF
 3. Ask questions
+
+![Demo](demo.png)
+<p align="center">
+  <img src="demo.png" width="800"/>
+</p>
+  
